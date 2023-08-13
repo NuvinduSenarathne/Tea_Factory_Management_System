@@ -36,6 +36,7 @@ const deadStockRouter = require("./routes/deadstock");
 const damagedstock = require("./routes/damagedstock");
 const staffRouter1 = require("./routes/Newstaff.js");
 const staffRouter2 = require("./routes/AttendanceR.js");
+const contactus = require("./routes/contactus.js");
 
 //use the files...
 app.use('/user', usersRouter);
@@ -48,6 +49,7 @@ app.use("/deadstock",deadStockRouter);
 app.use("/damagedstock",damagedstock);
 app.use("/newstaff", staffRouter1);
 app.use("/attendance1", staffRouter2);
+app.use("/contactus",contactus);
 
 //starts the server... (npm start / npm run dev)
 app.listen(PORT, () => {
